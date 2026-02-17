@@ -422,46 +422,54 @@ class KekatsuManager(QMainWindow):
         self.scan_local_roms()
 
     def export_db(self):
-        """Esporta il database unificato in formato testuale compatibile"""
+        """Esporta il database unificato con il delimitatore alla seconda riga e senza a capo finale"""
         dest = os.path.join(self.base_dir, "database.txt")
+        lines = []
         try:
-            with open(dest, 'w', encoding='utf-8') as f:
-                f.write("1\n" + self.DELIMITER + "\n")
-                
-                # Esporta Ufficiali
-                for r in range(self.table_off.rowCount()):
-                    # Mappa: Titolo, Sistema, Tipo, Regione, Ver, Autore, URL ROM, File, Size, URL Boxart
-                    row_data = [
-                        self.table_off.item(r, 1).text(), # Titolo
-                        self.table_off.item(r, 2).text(), # Sistema
-                        "Ufficiale",                      # Tipo
-                        self.table_off.item(r, 3).text(), # Regione
-                        self.table_off.item(r, 4).text(), # Ver
-                        self.table_off.item(r, 5).text(), # Autore
-                        self.table_off.item(r, 6).text(), # URL ROM
-                        self.table_off.item(r, 7).text(), # File
-                        self.table_off.item(r, 8).text(), # Size
-                        self.table_off.item(r, 9).text()  # URL Boxart
-                    ]
-                    f.write(self.DELIMITER.join(row_data) + "\n")
-
-                # Esporta Homebrew
-                for r in range(self.table_hb.rowCount()):
-                    row_data = [
-                        self.table_hb.item(r, 0).text(),  # Titolo
-                        self.table_hb.item(r, 1).text(),  # Sistema
-                        "Homebrew",                       # Tipo
-                        self.table_hb.item(r, 2).text(),  # Regione
-                        self.table_hb.item(r, 3).text(),  # Ver
-                        "Homebrew",                       # Autore fisso per export
-                        self.table_hb.item(r, 4).text(),  # URL ROM
-                        self.table_hb.item(r, 5).text(),  # File
-                        self.table_hb.item(r, 6).text(),  # Size
-                        ""                                # No URL Boxart
-                    ]
-                    f.write(self.DELIMITER.join(row_data) + "\n")
+            # Riga 1: Intestazione (es. versione o ID)
+            lines.append("1")
             
-            QMessageBox.information(self, "Esportazione", f"Database esportato con successo ({self.table_off.rowCount() + self.table_hb.rowCount()} titoli).")
+            # Riga 2: Carattere delimitatore richiesto (TAB)
+            lines.append(self.DELIMITER)
+            
+            # Esporta Ufficiali
+            for r in range(self.table_off.rowCount()):
+                row_data = [
+                    self.table_off.item(r, 1).text(), # Titolo
+                    self.table_off.item(r, 2).text(), # Sistema
+                    "Ufficiale",                      # Tipo
+                    self.table_off.item(r, 3).text(), # Regione
+                    self.table_off.item(r, 4).text(), # Ver
+                    self.table_off.item(r, 5).text(), # Autore
+                    self.table_off.item(r, 6).text(), # URL ROM
+                    self.table_off.item(r, 7).text(), # File
+                    self.table_off.item(r, 8).text(), # Size
+                    self.table_off.item(r, 9).text()  # URL Boxart
+                ]
+                lines.append(self.DELIMITER.join(row_data))
+
+            # Esporta Homebrew
+            for r in range(self.table_hb.rowCount()):
+                row_data = [
+                    self.table_hb.item(r, 0).text(),  # Titolo
+                    self.table_hb.item(r, 1).text(),  # Sistema
+                    "Homebrew",                       # Tipo
+                    self.table_hb.item(r, 2).text(),  # Regione
+                    self.table_hb.item(r, 3).text(),  # Ver
+                    "Homebrew",                       # Autore fisso per export
+                    self.table_hb.item(r, 4).text(),  # URL ROM
+                    self.table_hb.item(r, 5).text(),  # File
+                    self.table_hb.item(r, 6).text(),  # Size
+                    ""                                # No URL Boxart
+                ]
+                lines.append(self.DELIMITER.join(row_data))
+            
+            # Scrittura unificata con join per evitare l'ultimo \n
+            # e garantire che la seconda riga sia esattamente il delimitatore
+            with open(dest, 'w', encoding='utf-8') as f:
+                f.write("\n".join(lines))
+            
+            QMessageBox.information(self, "Esportazione", f"Database esportato con successo ({len(lines)-2} titoli).")
         except Exception as e:
             QMessageBox.critical(self, "Errore Esportazione", str(e))
 

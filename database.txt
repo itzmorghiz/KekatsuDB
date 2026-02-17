@@ -1,5 +1,5 @@
 1
-		
-New Super Mario Bros. (Europe) (En,Fr,De,Es,It)		nds		PAL		1.0		Nintendo		https://itzmorghiz.github.io/KekatsuDB/roms/nds/New Super Mario Bros. (Europe) (En,Fr,De,Es,It).nds		New Super Mario Bros. (Europe) (En,Fr,De,Es,It).nds		33554432		https://itzmorghiz.github.io/KekatsuDB/boxarts/A2DP.png
-New Super Mario Bros. (USA, Australia)		nds		NTSC-U		1.0		Nintendo		https://itzmorghiz.github.io/KekatsuDB/roms/nds/New Super Mario Bros. (USA, Australia).nds		New Super Mario Bros. (USA, Australia).nds		33554432		https://itzmorghiz.github.io/KekatsuDB/boxarts/A2DE.png
-Classic NES Series - Super Mario Bros. (USA, Europe)		gba		NTSC-U		1.0		Nintendo		https://itzmorghiz.github.io/KekatsuDB/roms/gba/Classic NES Series - Super Mario Bros. (USA, Europe).gba		Classic NES Series - Super Mario Bros. (USA, Europe).gba		4194304		https://itzmorghiz.github.io/KekatsuDB/boxarts/FSME.png
+	
+New Super Mario Bros. (Europe) (En,Fr,De,Es,It)	nds	PAL	1.0	Nintendo	https://itzmorghiz.github.io/KekatsuDB/roms/nds/New Super Mario Bros. (Europe) (En,Fr,De,Es,It).nds	New Super Mario Bros. (Europe) (En,Fr,De,Es,It).nds	33554432	https://itzmorghiz.github.io/KekatsuDB/boxarts/A2DP.png
+New Super Mario Bros. (USA, Australia)	nds	NTSC-U	1.0	Nintendo	https://itzmorghiz.github.io/KekatsuDB/roms/nds/New Super Mario Bros. (USA, Australia).nds	New Super Mario Bros. (USA, Australia).nds	33554432	https://itzmorghiz.github.io/KekatsuDB/boxarts/A2DE.png
+Classic NES Series - Super Mario Bros. (USA, Europe)	gba	NTSC-U	1.0	Nintendo	https://itzmorghiz.github.io/KekatsuDB/roms/gba/Classic NES Series - Super Mario Bros. (USA, Europe).gba	Classic NES Series - Super Mario Bros. (USA, Europe).gba	4194304	https://itzmorghiz.github.io/KekatsuDB/boxarts/FSME.png

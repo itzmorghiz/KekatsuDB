@@ -165,8 +165,8 @@ class KekatsuManager(QMainWindow):
         self.no_intro_db = {}
         self.base_url = "https://itzmorghiz.github.io/KekatsuDB/"
         
-        # Delimitatore fisso come richiesto (doppio TAB)
-        self.DELIMITER = "\t\t"
+        # Delimitatore fisso TAB (\t) come richiesto
+        self.DELIMITER = "\t"
 
         self.ensure_directories()
         self.load_no_intro_dat()
@@ -386,12 +386,11 @@ class KekatsuManager(QMainWindow):
         self.scan_local_roms()
 
     def export_db(self):
-        """Esporta il database usando il doppio TAB come delimitatore fisso"""
+        """Esporta il database usando un singolo TAB come delimitatore fisso"""
         dest = os.path.join(self.base_dir, "database.txt")
         try:
             with open(dest, 'w', encoding='utf-8') as f:
-                # Intestazione: versione del DB e delimitatore utilizzato
-                # (Nota: scriviamo il delimitatore letteralmente nel file se il parser Kekatsu lo richiede)
+                # Intestazione: versione del DB e delimitatore (\t)
                 f.write("1\n" + self.DELIMITER + "\n")
                 
                 for r in range(self.table.rowCount()):

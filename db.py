@@ -18,6 +18,16 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt, QThread, pyqtSignal, QSize
 from PyQt6.QtGui import QIcon, QPixmap, QAction
 
+def sanitize_filename(filename):
+    """Rimuove spazi e caratteri speciali dal nome del file per compatibilità web."""
+    name, ext = os.path.splitext(filename)
+    # Remplaza spazi con underscore
+    name = name.replace(" ", "_")
+    # Rimuove tutto ciò che non è alfanumerico o underscore
+    name = re.sub(r'[^a-zA-Z0-9_]', '', name)
+    # Converte in minuscolo (opzionale, ma consigliato per web server)
+    return f"{name.lower()}{ext.lower()}"
+
 class BatchProcessor(QThread):
     """Thread per l'elaborazione massiva di metadati e download copertine"""
     progress_signal = pyqtSignal(int, str)
@@ -48,7 +58,7 @@ class BatchProcessor(QThread):
             
             if is_homebrew:
                 real_title = h_title if h_title != "Unknown" else filename
-                author = "" # Per homebrew non mostriamo autore
+                author = "" 
                 box_path = None
             else:
                 real_title = self.no_intro_db.get(code, h_title)
@@ -289,8 +299,19 @@ class KekatsuManager(QMainWindow):
             if not os.path.exists(p_path): continue
             for f in os.listdir(p_path):
                 if f.lower().endswith(('.nds', '.gba', '.dsi')):
+                    old_path = os.path.join(p_path, f)
+                    new_name = sanitize_filename(f)
+                    new_path = os.path.join(p_path, new_name)
+                    
+                    # Rinomina se necessario
+                    if f != new_name:
+                        try:
+                            os.rename(old_path, new_path)
+                            f = new_name
+                        except: pass
+                        
                     tasks.append({
-                        "path": os.path.join(p_path, f), 
+                        "path": new_path, 
                         "plat": plat, 
                         "mode": "full"
                     })
@@ -363,7 +384,11 @@ class KekatsuManager(QMainWindow):
             ext = os.path.splitext(f)[1].lower()
             plat = "gba" if ext == ".gba" else "nds"
             if ext == ".dsi": plat = "dsi"
-            dest = os.path.join(self.roms_dir, plat, os.path.basename(f))
+            
+            # Sanitizzazione immediata all'importazione
+            clean_name = sanitize_filename(os.path.basename(f))
+            dest = os.path.join(self.roms_dir, plat, clean_name)
+            
             os.makedirs(os.path.dirname(dest), exist_ok=True)
             shutil.copy2(f, dest)
             self.scan_local_roms()
@@ -410,7 +435,7 @@ class KekatsuManager(QMainWindow):
             for r in range(self.table_off.rowCount()):
                 row_data = [
                     self.table_off.item(r, 1).text(), # Titolo
-                    self.table_off.item(r, 2).text(), # Sistema (Piattaforma)
+                    self.table_off.item(r, 2).text(), # Sistema
                     self.table_off.item(r, 3).text(), # Regione
                     self.table_off.item(r, 4).text(), # Ver
                     self.table_off.item(r, 5).text(), # Autore
@@ -421,22 +446,21 @@ class KekatsuManager(QMainWindow):
                 ]
                 lines.append(self.DELIMITER.join(row_data))
 
-            # Esporta dati dalle tabelle Homebrew (unificando lo schema)
+            # Esporta dati dalle tabelle Homebrew
             for r in range(self.table_hb.rowCount()):
                 row_data = [
                     self.table_hb.item(r, 0).text(),  # Titolo
                     self.table_hb.item(r, 1).text(),  # Sistema
                     self.table_hb.item(r, 2).text(),  # Regione
                     self.table_hb.item(r, 3).text(),  # Ver
-                    "Homebrew",                       # Autore (placeholder per HB)
+                    "Homebrew",                       # Autore
                     self.table_hb.item(r, 4).text(),  # URL ROM
                     self.table_hb.item(r, 5).text(),  # File
                     self.table_hb.item(r, 6).text(),  # Size
-                    ""                                # Nessuna Boxart per HB
+                    ""                                # Boxart
                 ]
                 lines.append(self.DELIMITER.join(row_data))
             
-            # Scrittura senza \n finale
             with open(dest, 'w', encoding='utf-8') as f:
                 f.write("\n".join(lines))
             

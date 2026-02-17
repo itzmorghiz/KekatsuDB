@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<datafile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://datomatic.no-intro.org/stuff https://datomatic.no-intro.org/stuff/schema_nointro_datfile_v3.xsd">
+	<header>
+		<id>54</id>
+		<name>Nintendo - Nintendo DSi (Decrypted)</name>
+		<description>Nintendo - Nintendo DSi (Decrypted)</description>
+		<version>20251108-084929</version>
+		<author>aci68, buckwheat, DeadSkullzJr, Densetsu, einstein95, Hiccup, jimmsu, kazumi213, PPLToast, rarenight, relax, SonGoku, xprism, xuom2, zg</author>
+		<homepage>No-Intro</homepage>
+		<url>https://www.no-intro.org</url>
+		<clrmamepro forcenodump="required"/>
+	</header>
+	<game name="[BIOS] Factory Nintendo DSi - NAND (Japan)" id="z008">
+		<description>[BIOS] Factory Nintendo DSi - NAND (Japan)</description>
+		<rom name="[BIOS] Factory Nintendo DSi - NAND (Japan).bin" size="251658240" crc="f6813125" md5="4922243f3f04dd7db04b532298a6c380" sha1="a50c21528f8b74a58c7f0d328006cde971f0e141" sha256="8574cdd0403db31a90baba5450b75230671dd69bf0c762a08f8abfdeb92f5d22"/>
+		<rom name="[BIOS] Factory Nintendo DSi - NAND (Japan) (no$gba footer).bin" size="64" crc="aabc63f3" md5="dd0fe23203e616cfe795956306305d9e" sha1="ce97f940b3896c6147a1d379c30c4ce451caae69" sha256="7c1cb180421383e7bb40866a3acea4b9ccf4db6284b6d049383805ba49ea0620"/>
+	</game>
+	<game name="[BIOS] Factory Nintendo DSi - NAND (Japan) (Alt)" id="z007">
+		<description>[BIOS] Factory Nintendo DSi - NAND (Japan) (Alt)</description>
+		<rom name="[BIOS] Factory Nintendo DSi - NAND (Japan) (Alt) (no$gba footer).bin" size="64" crc="7139b1d0" md5="d592da9ff8cdabd20c46d1dbcbe39b50" sha1="3cb53ca70e34a602fbb0ea9ae521eb7bfb449a43" sha256="090873f5297103b2aca119498b67b30654fff387569fce780357dda3df1c7d4b"/>
+		<rom name="[BIOS] Factory Nintendo DSi - NAND (Japan) (Alt).bin" size="251658240" crc="f29a40f8" md5="647fa7951c9b6d05b807e111667e9a77" sha1="00c79e39a791d4f9b7933367f17d6da7e908e559" sha256="5065a4ef28a17b8119dac989fb66accbea1a488cff3cd3568742483da8c40e62"/>
+	</game>
+	<game name="[BIOS] iQue DSi - NAND (China)" id="z006">
+		<description>[BIOS] iQue DSi - NAND (China)</description>
+		<rom name="[BIOS] iQue DSi - NAND (China).bin" size="251658240" crc="ea149a0f" md5="e219632c9756549cc38d2b2d8ed9a15a" sha1="1a1c20493f1b0cfab8f417e905b154cb810fe37c" sha256="a412b9e780281c47fb76af5cc4681c667ca7bd54a7e314a91c1f134a32a7c8b1"/>
+		<rom name="[BIOS] iQue DSi - NAND (China) (no$gba footer).bin" size="64" crc="4a911b37" md5="b07895541efd8fec8fb1cbb7b66ceb5b" sha1="126b9785014a4864b318b3900b3baa08e723d98f" sha256="053d36d23216bd37ce68f07730779a78fcd4fde5369a1ffa29f0946391c423d1"/>
+	</game>
+	<game name="[BIOS] Kyoushitsu Nintendo DSi - NAND (Japan) (Alt)" id="z009">
+		<description>[BIOS] Kyoushitsu Nintendo DSi - NAND (Japan) (Alt)</description>
+		<rom name="[BIOS] Kyoushitsu Nintendo DSi - NAND (Japan) (Alt).bin" size="251658240" crc="a795ae26" md5="d1740800146251479d915123347399a0" sha1="eb2c29a09689f7edf95cff80f4f8d4e04fc891d4" sha256="0df89bce8b8ee17cc203c7065d0ca03d8289c45021c708bec42fc116c1e2b3e4"/>
+		<rom name="[BIOS] Kyoushitsu Nintendo DSi - NAND (Japan) (Alt) (no$gba footer).bin" size="64" crc="fc666fc4" md5="433a83e360b64dc4332ddef63dcdfd84" sha1="e7dd92fa02fea6ae5118e67445d9aae1a6b67bf4" sha256="2f8881462dad882cb5be1c73ac1dbcac8248ef16feab3febe034d72963af7d5f"/>
+	</game>
+	<game name="[BIOS] Nintendo DSi ARM7 Boot ROM (World)" id="z005">
+		<description>[BIOS] Nintendo DSi ARM7 Boot ROM (World)</description>
+		<rom name="[BIOS] Nintendo DSi ARM7 Boot ROM (World).bin" size="65536" crc="4316cc42" md5="322ceeafb77b0cc96a1fcc6271e0e0ae" sha1="c7c7570bfe51c3c7c5da3b01331b94e7e7cb4f53" sha256="12a03016ba07cfd874fc002df49a2c6eb2414eb7cfa395c2043035ec5e9193e8" status="verified"/>
+	</game>
+	<game name="[BIOS] Nintendo DSi ARM9 Boot ROM (World)" id="z010">
+		<description>[BIOS] Nintendo DSi ARM9 Boot ROM (World)</description>
+		<rom name="[BIOS] Nintendo DSi ARM9 Boot ROM (World).bin" size="65536" crc="bae84f6c" md5="23031f25602a52c2df32c39554b0c55e" sha1="719b9eef33692406d7170ff526069615759c4dfc" sha256="6e9f70b51dc4f26289b597f14e2513620c2af964374a95f4c5a62b5cad199afc" status="verified"/>
+	</game>
+	<game name="[BIOS] Nintendo DSi Panda (Japan) (Intense)" id="0012">
+		<description>[BIOS] Nintendo DSi Panda (Japan) (Intense)</description>
+		<rom name="bios7i.bin" size="65536" crc="67d145dc" md5="c8b9fe70f1ef5cab8e55540cd1c13dc8" sha1="d2b17224e156ee5e55b5d8d9f323b1c9b86dd951" sha256="28a13952901b4065ef3f08c3252b49a00b6525e301b7ddaa3a390b4c7cbef901"/>
+		<rom name="bios9i.bin" size="65536" crc="fa0a90f4" md5="3fbb3f39bd9a96e5d743f138bd4b9907" sha1="db61fa39ddbc5f5ed71fb19cda47609ef0201723" sha256="664c608bd6ccfe583e87b3b924afa00f8697dc7ca92eeb6d206d68abb03d2e10"/>
+		<rom name="CID.bin" size="16" crc="f968f259" md5="3014fcdb2bcbc223337c97fc0745bad9" sha1="47500d146c4bbf91ddac4142d79d6dbef2b69b59" sha256="8cbf6152e8963678b7820c271486aeeeb469844561c79be21789601acd0d09e1"/>
+		<rom name="firmware.bin" size="131072" crc="0a439597" md5="93dbb42c5b3d7a2109b4d27105c9e3aa" sha1="b61d72863932b3918aec5a2262beaffd74b69770" sha256="ebe16830b7faaf1cf1679d0d614f77a8fff0415972a3b4fba433a6cfc67897a0"/>
+		<rom name="nand_dsi.bin" size="251658240" crc="0cc36451" md5="1823dc81648644a2b1d05da1dccca8ed" sha1="f1fab2dab70cd4cb3157f96f58bd867201cceaa7" sha256="ba8944296abbbe0a3719bf909a7fa00066b79f8e79a8ef5bdc834f3602db3340"/>
+	</game>
+	<game name="[BIOS] Nintendo Zone Box - NAND (USA) (En,Fr,Es)" id="z003">
+		<description>[BIOS] Nintendo Zone Box - NAND (USA) (En,Fr,Es)</description>
+		<rom name="[BIOS] Nintendo Zone Box - NAND (USA) (En,Fr,Es).bin" size="251658240" crc="7170bee9" md5="d7895f3de9a4a91d466afcc4c2a96e5f" sha1="cfeb1b458d3512ef44dc4458afd846d9c34ebd23" sha256="8942c61a7b7eb1102c33c4f40f525ab9307f605d39695f3a8eecb416b71306f1"/>
+		<rom name="[BIOS] Nintendo Zone Box - NAND (USA) (En,Fr,Es) (no$gba footer).bin" size="64" crc="a5e3084f" md5="abb91db0d42a6418954f28a1194a23b2" sha1="14b95282a71eb6db5d3fe315bab4338907cc5513" sha256="839d6b3fd077cc27dd541cf1337f82e678a151e4794f92e74b91afcc46cb03ae"/>
+	</game>
+	<game name="[BIOS] PWC DSi - NAND (Unknown)" id="z004">
+		<description>[BIOS] PWC DSi - NAND (Unknown)</description>
+		<rom name="[BIOS] PWC DSi - NAND (Unknown).bin" size="251658240" crc="43c1d9c6" md5="dbe17698e7e1c2256aa0a082f0d80aee" sha1="99e289302883c2b1e82b539030d69efab70f4096" sha256="9aeafcd1cefcea3caa329680100c8f68ed430992e5bfebff4f07a621d208e06e"/>
+		<rom name="[BIOS] PWC DSi - NAND (Unknown) (no$gba footer).bin" size="64" crc="d8c6d005" md5="178c4c53743fe0aef7fcfc28d6cbc4ef" sha1="7f13bb05b717a4092f4557fb49deda173d679a5e" sha256="6fe44ea419e9eb0b001424ad9fde42547e558e5677e6659a01753ad1735b64f5"/>
+	</game>
+	<game name="Face Training (Europe) (En,Fr,De,Es,It)" id="0009">
+		<description>Face Training (Europe) (En,Fr,De,Es,It)</description>
+		<rom name="Face Training (Europe) (En,Fr,De,Es,It).dsi" size="134217728" crc="eaa58bcd" md5="0a020966db338bb0eb2c68112da5d8ec" sha1="90816e7aac1d61fd88de02074abf2e6639c2ec94" sha256="c97a690c4abb9868dcd9a43cfad338f56bc8a681c94b3fbfb07cb56f1acb46ed" status="verified" serial="USKV"/>
+	</game>
+	<game name="Foto Showdown (USA)" id="0005" cloneofid="0001">
+		<description>Foto Showdown (USA)</description>
+		<rom name="Foto Showdown (USA).dsi" size="33554432" crc="5da3fe1e" md5="8f253dddef53fa682c48cb168e59b160" sha1="46f55062c1b4f7d489f3b75dc587d2108d8d9f12" sha256="3cdf3251ddc1d5042baf152c858fb6d7ef80a6b7cd3b7230ae4bb218876fccea" status="verified" serial="DMFE"/>
+	</game>
+	<game name="Hair Salon (Europe) (En,Fr,De,Es,It)" id="0002">
+		<description>Hair Salon (Europe) (En,Fr,De,Es,It)</description>
+		<rom name="Hair Salon (Europe) (En,Fr,De,Es,It).dsi" size="33554432" crc="7e0b1ce4" md5="4fa4f1edfc97373d3e218d796a5391cd" sha1="774e69102cf32f7013166f5ba2cde08599ccc1e5" sha256="6c2efe11181fac362e641da1b20d527ff69f05bac82183727de16299ccedb46e" serial="DHSV"/>
+	</game>
+	<game name="Hidden Photo (Europe) (En,Fr,Es,It)" id="0007">
+		<description>Hidden Photo (Europe) (En,Fr,Es,It)</description>
+		<rom name="Hidden Photo (Europe) (En,Fr,Es,It).dsi" size="33554432" crc="850f299d" md5="79cb43b40988a5210b916101cb723a54" sha1="5388272c092e31fc34b1c7958f1110d33f43fb7c" sha256="0faf87f6fa532dc6288e2b72b10de00da0a6a8ea5cc04d4b69b4daa8376a469c" status="verified" serial="DD3P"/>
+	</game>
+	<game name="MCU FIRM WRITER (World) (Program)" id="z042">
+		<category>Applications</category>
+		<description>MCU FIRM WRITER (World) (Program)</description>
+		<rom name="MCU FIRM WRITER (World) (Program).dsi" size="268435456" crc="cd9b1ac2" md5="5c38b4b944c69ed9fbcdb9b4c60e2f95" sha1="ea8296fc116359a178e64d4a09157e8baba3a453" sha256="96837db893bf1338dcd91f42d7198bbf06bf885faaab5e6022dafa17b0f97352" serial="NTRJ"/>
+	</game>
+	<game name="Monster Finder (Japan)" id="0001">
+		<description>Monster Finder (Japan)</description>
+		<rom name="Monster Finder (Japan).dsi" size="33554432" crc="dff3893d" md5="ffd8bf48a9294a6957dc928e34f03537" sha1="aa3b28446ef8ed43d09cbb4aa367e153e69fd07a" sha256="0218ddcd075e5013f59991475e7c6bd43761d589034acd81b044a01c97c89f15" status="verified" serial="DMFJ"/>
+	</game>
+	<game name="MySims (Unknown) (Proto)" id="z017">
+		<description>MySims (Unknown) (Proto)</description>
+		<rom name="MySims (Unknown) (Proto).dsi" size="33554432" crc="3735a91a" md5="5ad66e2c18d18248678a565d2ee4b15a" sha1="628169f84f680483f330f5f48d70471f8328ec93" sha256="282f091e4d9eb5e9505f2a2c354fed44685c397c9587ed468e55c8b2cd8adbb1"/>
+	</game>
+	<game name="Nintendo DSi XL Demo Video (USA)" id="0010">
+		<category>Demos</category>
+		<description>Nintendo DSi XL Demo Video (USA)</description>
+		<rom name="Nintendo DSi XL Demo Video (USA).dsi" size="536870912" crc="d01a06f5" md5="1b43bf617b1f168de512833dfed2e7eb" sha1="14fda323f6e5132777f033f1912078cab51ce9f9" sha256="86e0d3adacd269ce4fc49fecd46c2f1e2734c0a0f649130af11e7a187174d7b9" status="verified" serial="DMEE"/>
+	</game>
+	<game name="Nintendo DSi XL Demo Video Volume 2 (USA)" id="0011">
+		<category>Demos</category>
+		<description>Nintendo DSi XL Demo Video Volume 2 (USA)</description>
+		<rom name="Nintendo DSi XL Demo Video Volume 2 (USA).dsi" size="536870912" crc="d9a938ec" md5="0f75373b187adb45fc0ae89c5fc74e27" sha1="ed3b0e4148928067fcdb1804d760d97091413ca1" sha256="5c285d8fd3b31d22e4c27929d843747f6c435c198c22b9e3ef7394af1dbf7fcb" status="verified" serial="DMDE"/>
+	</game>
+	<game name="NOE Movie Player Vol.1 (Europe) (En,Fr,De,Es,It)" id="z002">
+		<description>NOE Movie Player Vol.1 (Europe) (En,Fr,De,Es,It)</description>
+		<rom name="NOE Movie Player Vol.1 (Europe) (En,Fr,De,Es,It).dsi" size="268435456" crc="434f423b" md5="f277a49a1a108d8bdda1c50f406db812" sha1="e589cab2eb62b1938dd3aeafc764e0454c99c5aa" serial="DMPP"/>
+	</game>
+	<game name="Picture Perfect Hair Salon (USA) (En,Fr,Es)" id="0003" cloneofid="0002">
+		<description>Picture Perfect Hair Salon (USA) (En,Fr,Es)</description>
+		<rom name="Picture Perfect Hair Salon (USA) (En,Fr,Es).dsi" size="33554432" crc="92bdc940" md5="23b9f85d5c5aac0cc58e91f9c8903a8c" sha1="712e784b185b31388452202a4003ae7859dfcc4b" sha256="9bfbcc1f513ec9b4d42b2a7431125b23538d0d5b345d57ff7e5b9fe7cb198598" serial="DHSE"/>
+	</game>
+	<game name="System - Flaw (USA) (En,Fr,Es)" id="0004" cloneofid="0006">
+		<description>System - Flaw (USA) (En,Fr,Es)</description>
+		<rom name="System - Flaw (USA) (En,Fr,Es).dsi" size="33554432" crc="319870fd" md5="e45cc21a32b73a9b0e80e11b23e304ce" sha1="8177108efddab15226b4add1837eba560d7b9f11" sha256="518ff403ca24f2eb715726ae7643d445936a2ea4a9c79e135a52be07ae1827cf" status="verified" serial="DSYE"/>
+	</game>
+	<game name="System - Flaw (Europe) (En,Fr,De,Es,It)" id="0006">
+		<description>System - Flaw (Europe) (En,Fr,De,Es,It)</description>
+		<rom name="System - Flaw (Europe) (En,Fr,De,Es,It).dsi" size="33554432" crc="ac1b0e9b" md5="7bcb9dc3a5bad4ebfbd6fed6e892e20e" sha1="29ae360e84de1eaaff7ebdb41866353f39ee2f3b" sha256="7a884b0a5b8bffeb42e27be8d0929e78a6a17d430880f3621787f41b05025966" status="verified" serial="DSYP"/>
+	</game>
+	<game name="TWL EVA. AGING (World) (Ver1.0) (2008-06-26) (Program)" id="z044">
+		<category>Applications</category>
+		<description>TWL EVA. AGING (World) (Ver1.0) (2008-06-26) (Program)</description>
+		<rom name="TWL EVA. AGING (World) (Ver1.0) (2008-06-26) (Program).dsi" size="134217728" crc="0195b5a7" md5="8330ee54cd139659c45acc4800f27307" sha1="07bd503b91b54def22b87398913576bd6bb9dac8" sha256="205dcfd2dae939fb7bad8f5cd2323ba06e01478b2246a37b7bbe5e096c4e3f74" status="verified" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. CAMERA (World) (Ver2.1) (2008-11-27) (Program)" id="z014" cloneofid="z016">
+		<category>Applications</category>
+		<description>TWL EVA. CAMERA (World) (Ver2.1) (2008-11-27) (Program)</description>
+		<rom name="TWL EVA. CAMERA (World) (Ver2.1) (2008-11-27) (Program).dsi" size="134217728" crc="58562b97" md5="e8f46d377b38e1889e9c8be3ea33c094" sha1="f251fe040b838642b07ba0398240207d38c1346e" sha256="5c0bf0fc4acdaae678e5cda8ff7dd141cb530d274424cacb379389bbfd0e0137" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. CAMERA ASSY (World) (Ver2.1) (2008-11-27) (Program)" id="z018">
+		<category>Applications</category>
+		<description>TWL EVA. CAMERA ASSY (World) (Ver2.1) (2008-11-27) (Program)</description>
+		<rom name="TWL EVA. CAMERA ASSY (World) (Ver2.1) (2008-11-27) (Program).dsi" size="134217728" crc="81a5dcb5" md5="d513abefeb7b1653455ac177c60ef77e" sha1="4621ce81115bce3ca30921f55fd677da9baf2aca" sha256="5d0c1d67adb18297b3673d8b4a01f69827544290716314e98ac6d7b27e1f2752" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. DEV AGING (World) (Ver1.0) (2008-06-26) (Program)" id="z047">
+		<category>Applications</category>
+		<description>TWL EVA. DEV AGING (World) (Ver1.0) (2008-06-26) (Program)</description>
+		<rom name="TWL EVA. DEV AGING (World) (Ver1.0) (2008-06-26) (Program).dsi" size="134217728" crc="72905a38" md5="771d1b07b50e23640271c159de352382" sha1="b207addf51396b98af6d4729f6bf0f7b1a04128c" sha256="d9fd75d079a7039bfa8cf16bdb3a0b66f632a9882c2c3c2a0037781183f1abac" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. FINAL (World) (Ver3.0) (2009-07-02) (Program)" id="z019">
+		<category>Applications</category>
+		<description>TWL EVA. FINAL (World) (Ver3.0) (2009-07-02) (Program)</description>
+		<rom name="TWL EVA. FINAL (World) (Ver3.0) (2009-07-02) (Program).dsi" size="134217728" crc="9c207173" md5="30a5cf68607ab6e088dc0d4d47fed68c" sha1="9edce136542419eb6eb1bf96911e0a640fb6f0cb" sha256="248211b3b1393b0ae58d6d23f43a303bf0e4dca173170dc89e2e69a491535107" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. FINAL (World) (Ver3.1) (2009-11-19) (Program)" id="z016">
+		<category>Applications</category>
+		<description>TWL EVA. FINAL (World) (Ver3.1) (2009-11-19) (Program)</description>
+		<rom name="TWL EVA. FINAL (World) (Ver3.1) (2009-11-19) (Program).dsi" size="134217728" crc="ace62109" md5="41a0c9a6e64a29f2e38c80edb0dd8cf9" sha1="0270390e20b11ae65438af0ddb36431047f31242" sha256="32aba478beb960b973b3d6aaea23bf62026501be313d5d357c870501f882732d" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. FLICKER (World) (Ver1.0) (2008-09-05) (Program)" id="z013" cloneofid="z016">
+		<category>Applications</category>
+		<description>TWL EVA. FLICKER (World) (Ver1.0) (2008-09-05) (Program)</description>
+		<rom name="TWL EVA. FLICKER (World) (Ver1.0) (2008-09-05) (Program).dsi" size="134217728" crc="b465b202" md5="a83d734d2c2c15c544fa71234e445bf7" sha1="c2ad2b68e3c95865cc5a4cb6515a1ba114d5817b" sha256="f3a6532be2fe72fb79a5b345bf2677e6e6c22d43f2a96d9c690479e3cae6d9b1" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. IMPORT EUR (World) (Ver1.3) (2009-11-06) (Program)" id="z020">
+		<category>Applications</category>
+		<description>TWL EVA. IMPORT EUR (World) (Ver1.3) (2009-11-06) (Program)</description>
+		<rom name="TWL EVA. IMPORT EUR (World) (Ver1.3) (2009-11-06) (Program).dsi" size="67108864" crc="4906de93" md5="b23d353d872abfa46d3caa5442ff3565" sha1="7bb55c69d1bd47231a5b88fb48c2e8e2c3e499a9" sha256="60e07923fe977b21857d0e5faac8a8ed388818f5cab0aed16ffd0d6b83882a7b" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. IMPORT JPN (World) (Ver1.5) (2009-08-20) (Program)" id="z021">
+		<category>Applications</category>
+		<description>TWL EVA. IMPORT JPN (World) (Ver1.5) (2009-08-20) (Program)</description>
+		<rom name="TWL EVA. IMPORT JPN (World) (Ver1.5) (2009-08-20) (Program).dsi" size="67108864" crc="50275b8c" md5="3eb49fbbbfbbf8c1c493ed1647d35dfd" sha1="bb56f0f8873a239605415c6cdd88e9886be9de1d" sha256="52bc937d247c6ae1f6a23ef627b4f75c64686aa79c81c58b3569993c5d07b06f" status="verified" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. IMPORT USA (World) (Ver1.3) (2009-08-20) (Program)" id="z022">
+		<category>Applications</category>
+		<description>TWL EVA. IMPORT USA (World) (Ver1.3) (2009-08-20) (Program)</description>
+		<rom name="TWL EVA. IMPORT USA (World) (Ver1.3) (2009-08-20) (Program).dsi" size="67108864" crc="4c87b35d" md5="efaf956a0bf21d93fef6596281d9196c" sha1="6179a8256da2b0e6794829c49b4f99dcdfec4a0c" sha256="6b4bfde2b511166366e45fdbedac65a797aca0e10dfd5836f88a3cf60ac51a76" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. IMPORT USA_B (World) (Ver1.0) (2009-09-10) (Program)" id="z023">
+		<category>Applications</category>
+		<description>TWL EVA. IMPORT USA_B (World) (Ver1.0) (2009-09-10) (Program)</description>
+		<rom name="TWL EVA. IMPORT USA_B (World) (Ver1.0) (2009-09-10) (Program).dsi" size="134217728" crc="45a928e2" md5="efa5762b97d2dff1a7803939a2992e54" sha1="dfa20a9a639e56da77337c7b722dc4033c1adfa3" sha256="3836b710ed1eb6b3d19493542f19b111519e382ac4d4aadbff30e3c189074313" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. MIC (World) (Ver3.0) (2009-08-19) (Program)" id="z015" cloneofid="z016">
+		<category>Applications</category>
+		<description>TWL EVA. MIC (World) (Ver3.0) (2009-08-19) (Program)</description>
+		<rom name="TWL EVA. MIC (World) (Ver3.0) (2009-08-19) (Program).dsi" size="134217728" crc="450bfaaf" md5="e6b704f68688727a5bf259f290d93350" sha1="47456cf6d318070593503229b49b25a7cc490263" sha256="723560bc079cdc16ab03ddf4e11d7e02eeedf478b0a75e476fa56ada118e0457" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. MIC (World) (Ver3.0) (2009-08-17) (Program)" id="z024">
+		<category>Applications</category>
+		<description>TWL EVA. MIC (World) (Ver3.0) (2009-08-17) (Program)</description>
+		<rom name="TWL EVA. MIC (World) (Ver3.0) (2009-08-17) (Program).dsi" size="134217728" crc="2c61754b" md5="8d1080c922f215b33a83773418fd9d12" sha1="85c76b3c3151730a739c1e36a8f526e036e553b0" sha256="0cc7f9ac71cc588f454a3350189cbe07521ba018b00a2166fc8190b7307e2f4d" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. NCHECK ASI (World) (Ver1.0) (2009-12-04) (Program)" id="z025">
+		<category>Applications</category>
+		<description>TWL EVA. NCHECK ASI (World) (Ver1.0) (2009-12-04) (Program)</description>
+		<rom name="TWL EVA. NCHECK ASI (World) (Ver1.0) (2009-12-04) (Program).dsi" size="134217728" crc="1b875b20" md5="162582477f64dd21ac6d14ba4106d203" sha1="9f5e1df9524320a536ae0092091589e1375fa7ad" sha256="c218e0a8c916ee3fe46a3dd47f21dc18610fcd5bfa8f8ec2509a543782cb8745" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. NCHECK EUR (World) (Ver1.0) (2009-01-05) (Program)" id="z026">
+		<category>Applications</category>
+		<description>TWL EVA. NCHECK EUR (World) (Ver1.0) (2009-01-05) (Program)</description>
+		<rom name="TWL EVA. NCHECK EUR (World) (Ver1.0) (2009-01-05) (Program).dsi" size="134217728" crc="c01912a6" md5="6dbd025d6dd3b37311d278141e4468e1" sha1="40c036714d9bc70365f28f7f6f120f7eb13aa577" sha256="cbec1f68546c78c44311155e99bc274dc0845dfd864e7d2ca931cddd3c4c992a" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. NCHECK EUR (World) (Ver1.2) (2009-09-14) (Program)" id="z027">
+		<category>Applications</category>
+		<description>TWL EVA. NCHECK EUR (World) (Ver1.2) (2009-09-14) (Program)</description>
+		<rom name="TWL EVA. NCHECK EUR (World) (Ver1.2) (2009-09-14) (Program).dsi" size="134217728" crc="368da452" md5="aee7488c4ef36c9cef3294c97e8f8dcd" sha1="81c4ebaa8ab853fefb140d8ca98378bf9a106625" sha256="89768ca66b3d4a56049a9e3d7539480c4664b0c299b677e78acb8029ee82c8e6" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. NCHECK JPN (World) (Ver1.6) (2009-09-14) (Program)" id="z028">
+		<category>Applications</category>
+		<description>TWL EVA. NCHECK JPN (World) (Ver1.6) (2009-09-14) (Program)</description>
+		<rom name="TWL EVA. NCHECK JPN (World) (Ver1.6) (2009-09-14) (Program).dsi" size="134217728" crc="75173018" md5="9f76a9d41014d57bf9d207099d8be0d6" sha1="c7528497be9b696851edf7a4c6a27496fd7c8a32" sha256="2953bf796681653c19f58bc333cc870029358f49b7ac80b0bb7a7a23841419ad" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. NCHECK KOR (World) (Ver1.0) (2010-02-23) (Program)" id="z029">
+		<category>Applications</category>
+		<description>TWL EVA. NCHECK KOR (World) (Ver1.0) (2010-02-23) (Program)</description>
+		<rom name="TWL EVA. NCHECK KOR (World) (Ver1.0) (2010-02-23) (Program).dsi" size="134217728" crc="58d29ed3" md5="482ae9b3e9de5fe79f883ba43418ff52" sha1="1b4c69c2e326e64ce5299c6acf3034b6cca7a4dc" sha256="07fb4b5f9cce3eb96360fd5b250e2859d3824f66726dcbabe26c57c89845cea8" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. NCHECK USA (World) (Ver1.2) (2009-08-24) (Program)" id="z030">
+		<category>Applications</category>
+		<description>TWL EVA. NCHECK USA (World) (Ver1.2) (2009-08-24) (Program)</description>
+		<rom name="TWL EVA. NCHECK USA (World) (Ver1.2) (2009-08-24) (Program).dsi" size="134217728" crc="f6609011" md5="0f184774964c2d88c406fb2ed71ca3b1" sha1="456cf12c0cff1955f9cb938d36b5d81e89b27cb3" sha256="e9491f1febc036b92f0d9237ef7658eebcf29fc5191536c28ba31faf41efc933" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. NCHECK USA (World) (Ver1.3) (2009-09-14) (Program)" id="z031">
+		<category>Applications</category>
+		<description>TWL EVA. NCHECK USA (World) (Ver1.3) (2009-09-14) (Program)</description>
+		<rom name="TWL EVA. NCHECK USA (World) (Ver1.3) (2009-09-14) (Program).dsi" size="134217728" crc="63b54d4c" md5="63ad8d3605cb0df563fec8c151ea3b80" sha1="3f4e8192addcca53eced6415d0df2fe64846d812" sha256="d3ebdd613cc6306317f5c907a282cc00d11a2b1bf6d199973e02fc640904dc35" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. PRE IMPORT (World) (Ver1.3) (2009-12-10) (Program)" id="z043">
+		<category>Applications</category>
+		<description>TWL EVA. PRE IMPORT (World) (Ver1.3) (2009-12-10) (Program)</description>
+		<rom name="TWL EVA. PRE IMPORT (World) (Ver1.3) (2009-12-10) (Program).dsi" size="16834560" crc="495c5cdd" md5="1c78776fd11299e5fb06bc822ab6fef8" sha1="f7f84385659bca632b6e58708767a6925bf41f80" sha256="b61f285d8d083a57c3be8212ec08b005d606df0866d6b3213b8ea5f5ad4184f0" status="verified" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. SELFTEST (World) (Ver0.7) (2009-12-02) (Program)" id="z032">
+		<category>Applications</category>
+		<description>TWL EVA. SELFTEST (World) (Ver0.7) (2009-12-02) (Program)</description>
+		<rom name="TWL EVA. SELFTEST (World) (Ver0.7) (2009-12-02) (Program).dsi" size="134217728" crc="e4b10f8d" md5="62fb1a47986e3ab2ae47b05a36baea52" sha1="328e7e660f2c4cddfaff2cc3b0dfc4bf7857a4a8" sha256="0ac1335a03ab24e81c0ed8accbf4a5bc7fcc108b64104fa2662d389be5cc309e" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. TP_CAL (World) (Ver2.0) (2008-09-12) (Program)" id="z033">
+		<category>Applications</category>
+		<description>TWL EVA. TP_CAL (World) (Ver2.0) (2008-09-12) (Program)</description>
+		<rom name="TWL EVA. TP_CAL (World) (Ver2.0) (2008-09-12) (Program).dsi" size="134217728" crc="517c804e" md5="7f5d1ed498b4eccdc4d5b1dbb3cd9b2d" sha1="bdd6ee5bff2dc0a7b5e8208bad21710ad460fe40" sha256="52a6af557672c49f0fc168cb943079d02db77ce4852343b836fa83fabfa81dcb" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. TP_CAL (World) (Ver2.1) (2009-11-17) (Program)" id="z048">
+		<category>Applications</category>
+		<description>TWL EVA. TP_CAL (World) (Ver2.1) (2009-11-17) (Program)</description>
+		<rom name="TWL EVA. TP_CAL (World) (Ver2.1) (2009-11-17) (Program).dsi" size="134217728" crc="b6dbba0c" md5="673d5f43cd940eeaf583e762826708ff" sha1="425ca0954b784cb177ad1cf7dea40fc4924fc37e" sha256="dbec5ebdc4d75e07a4090398d8be943e11358eef47b0adabdf5aa476f705ba34" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. UTL IMPORT EUR (World) (Ver1.1) (2010-03-12) (Program)" id="z035">
+		<category>Applications</category>
+		<description>TWL EVA. UTL IMPORT EUR (World) (Ver1.1) (2010-03-12) (Program)</description>
+		<rom name="TWL EVA. UTL IMPORT EUR (World) (Ver1.1) (2010-03-12) (Program).dsi" size="134217728" crc="8e496917" md5="2005727ec5fc7507c04618ca68f8ff79" sha1="53e63d0e928dbb6ae5a403b369c9d07675b53086" sha256="f804ee1dd2286be4310cabb587bf506e8484fcd8bfc7e5cb894a625d6e9f0607" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. UTL IMPORT EUR (World) (Ver1.2) (2010-05-14) (Program)" id="z036">
+		<category>Applications</category>
+		<description>TWL EVA. UTL IMPORT EUR (World) (Ver1.2) (2010-05-14) (Program)</description>
+		<rom name="TWL EVA. UTL IMPORT EUR (World) (Ver1.2) (2010-05-14) (Program).dsi" size="134217728" crc="22eed744" md5="06e266ccf981b635f9ecb890b815676b" sha1="df45194434a6d90b7512dc46779c276589ddb047" sha256="4dac8eb1654316a5f9c14b9a572bb950a807f4b9604de25ceeef10b44f91d3ec" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. UTL IMPORT EUR (World) (Ver1.0) (2009-11-02) (Program)" id="z034">
+		<category>Applications</category>
+		<description>TWL EVA. UTL IMPORT EUR (World) (Ver1.0) (2009-11-02) (Program)</description>
+		<rom name="TWL EVA. UTL IMPORT EUR (World) (Ver1.0) (2009-11-02) (Program).dsi" size="134217728" crc="aa96ebc4" md5="97e9e492dd2bfd0594471b6c7f01dddd" sha1="177eb6a3b685de4614f70d7e1a235e8f68024468" sha256="44fae8e73409d1f6037cbdecfc4472a6feca8c518ac5c0e99f62ecf1695d4607" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. UTL IMPORT EUR (World) (Ver1.4) (2011-04-14) (Program)" id="z049">
+		<category>Applications</category>
+		<description>TWL EVA. UTL IMPORT EUR (World) (Ver1.4) (2011-04-14) (Program)</description>
+		<rom name="TWL EVA. UTL IMPORT EUR (World) (Ver1.4) (2011-04-14) (Program).dsi" size="134217728" crc="b0c1187c" md5="10124675f8c482b38d046ab289056fcb" sha1="f8aea9b2123e5d7d4a97aee52654e1ce5fcefc90" sha256="4f1177fd87f29d04be993b34ab25bd0b98e73814b1621ba79079d56c3e61eba0" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. UTL IMPORT JPN (World) (Ver1.1) (2010-02-03) (Program)" id="z037">
+		<category>Applications</category>
+		<description>TWL EVA. UTL IMPORT JPN (World) (Ver1.1) (2010-02-03) (Program)</description>
+		<rom name="TWL EVA. UTL IMPORT JPN (World) (Ver1.1) (2010-02-03) (Program).dsi" size="134217728" crc="19b1d31c" md5="91f1fe8cf3875bb2a177a4eeacf6714c" sha1="5326f5145ed5dd48b03458b1dfc44c84d6b0e889" sha256="ea6d853c782fc086200277a8afa7663544a855ccf5898078192e4d14be167995" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. UTL IMPORT JPN_A (World) (Ver1.0) (2010-01-19) (Program)" id="z038">
+		<category>Applications</category>
+		<description>TWL EVA. UTL IMPORT JPN_A (World) (Ver1.0) (2010-01-19) (Program)</description>
+		<rom name="TWL EVA. UTL IMPORT JPN_A (World) (Ver1.0) (2010-01-19) (Program).dsi" size="134217728" crc="2ec98f68" md5="a436be11816e2f9013541979d6e64c42" sha1="53dcefc464183031b733fd6d242c7864f398f5d8" sha256="f75f4f0579737c7ed2f51509b6665dff4c66e6fecc193e1056571b13e50fdc0c" status="verified" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. UTL IMPORT USA (World) (Ver1.0) (2009-12-28) (Program)" id="z039">
+		<category>Applications</category>
+		<description>TWL EVA. UTL IMPORT USA (World) (Ver1.0) (2009-12-28) (Program)</description>
+		<rom name="TWL EVA. UTL IMPORT USA (World) (Ver1.0) (2009-12-28) (Program).dsi" size="134217728" crc="8003ab83" md5="520bb33f3bcc64e9cbcf8e3aef1b7a27" sha1="c1618fc40e99cfef73187505d831f6865543cc17" sha256="a9404074c4b98ed8d69c413d899faa28ed47ebebacaf153c87cc80b4b21e5f18" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. UTL IMPORT USA (World) (Ver1.1) (2010-03-12) (Program)" id="z040">
+		<category>Applications</category>
+		<description>TWL EVA. UTL IMPORT USA (World) (Ver1.1) (2010-03-12) (Program)</description>
+		<rom name="TWL EVA. UTL IMPORT USA (World) (Ver1.1) (2010-03-12) (Program).dsi" size="134217728" crc="3fd0bc4a" md5="af87bd0d079a7bf411cb01551350a755" sha1="acdf8cddb527d11278a081ef108788cb3aa3b72e" sha256="32d1142291e11d9b5c49d75a8449b28bc61eeb6746aef2c124871f8a7fa42711" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. UTL NCHECK USA (World) (Ver1.0) (2009-11-02) (Program)" id="z041">
+		<category>Applications</category>
+		<description>TWL EVA. UTL NCHECK USA (World) (Ver1.0) (2009-11-02) (Program)</description>
+		<rom name="TWL EVA. UTL NCHECK USA (World) (Ver1.0) (2009-11-02) (Program).dsi" size="134217728" crc="65efd284" md5="8948004b375a3b0575e6f61df9a6affa" sha1="bf9364f377f0e15dd1ab23ffae54bd0f8bff39bd" sha256="e1f110dc966393e4fee13b0d8dc7038fec58bf23c0dab14adf11e86ab50a7b25" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. WRITE SDMC-LNC (World) (Ver1.0) (2008-11-20) (Program)" id="z045">
+		<category>Applications</category>
+		<description>TWL EVA. WRITE SDMC-LNC (World) (Ver1.0) (2008-11-20) (Program)</description>
+		<rom name="TWL EVA. WRITE SDMC-LNC (World) (Ver1.0) (2008-11-20) (Program).dsi" size="134217728" crc="eed0f971" md5="b77448d54d9244eac2749a4491049be9" sha1="83238688d031076260b9f8ffc8dbdb86c6da95f1" sha256="ce75ef25a2fe14e80f909fa59f46e21726b6d7d21a0912c469eba95fa4412e94" serial="NTRJ"/>
+	</game>
+	<game name="TWL EVA. WRITE SDMC-LNC (World) (Ver1.1) (2009-10-26) (Program)" id="z046">
+		<category>Applications</category>
+		<description>TWL EVA. WRITE SDMC-LNC (World) (Ver1.1) (2009-10-26) (Program)</description>
+		<rom name="TWL EVA. WRITE SDMC-LNC (World) (Ver1.1) (2009-10-26) (Program).dsi" size="134217728" crc="af93a36d" md5="8601b5c049a6b27a5463c1e46c2c2ed6" sha1="97651d0248a0faa48ca2e3f8793d76ece4c2649c" sha256="a5b94ad1b5cc184144f548dcadb6414ec9da410047b4e9aff41b5b92cb5602d0" serial="NTRJ"/>
+	</game>
+	<game name="Wimmelbild-Creator (Germany)" id="0008" cloneofid="0007">
+		<description>Wimmelbild-Creator (Germany)</description>
+		<rom name="Wimmelbild-Creator (Germany).dsi" size="33554432" crc="d686f0bc" md5="33e9db9a240cba9902b6547d1404e92e" sha1="5f068ea1f7d2559e74b85bc6f52c5266b985e3b6" sha256="bf4de7588904010727b483065b5534f877c95e9852d6c391ffeff248745889bf" serial="DD3D"/>
+	</game>
+	<game name="WRFU Tester (World) (v2.01) (2009-05-18) (Program)" id="z011" cloneofid="z001">
+		<category>Applications</category>
+		<description>WRFU Tester (World) (v2.01) (2009-05-18) (Program)</description>
+		<rom name="WRFU Tester (World) (v2.01) (2009-05-18) (Program).dsi" size="268435456" crc="d91aa0e7" md5="19955df5753a2b1a59a4e6c84e94c3e2" sha1="8e5c11412cd5459b94e84909770bdada4c91276a" sha256="81f2c4c35616960a62a8c4d7ce1838929e94ebb4d4565eed2bb048ff7365b058" status="verified" serial="NTRJ"/>
+	</game>
+	<game name="WRFU Tester (World) (v3.01) (2010-06-17) (Program)" id="z001">
+		<category>Applications</category>
+		<description>WRFU Tester (World) (v3.01) (2010-06-17) (Program)</description>
+		<rom name="WRFU Tester (World) (v3.01) (2010-06-17) (Program).dsi" size="268435456" crc="eb638291" md5="edab04f62d562ba8421f7eddeade6601" sha1="329a255a946bdcb70bc76077ab6ddad75617519d" status="verified" serial="NTRJ"/>
+	</game>
+	<game name="WRFU Tester (World) (v0.60) (2008-08-21) (Program)" id="z012" cloneofid="z001">
+		<category>Applications</category>
+		<description>WRFU Tester (World) (v0.60) (2008-08-21) (Program)</description>
+		<rom name="WRFU Tester (World) (v0.60) (2008-08-21) (Program).dsi" size="268435456" crc="b0d48934" md5="c2610a5ed6ebc8e9404ae61fecbcd0ca" sha1="8106f1ed5178c046d56b3bcb8fb6c3f70af51fe2" sha256="0eece6e0b17c197cdc93dddfbd2b9d6d72f630e10809c29ea5f6cbd3b78633b4" serial="NTRJ"/>
+	</game>
+</datafile>

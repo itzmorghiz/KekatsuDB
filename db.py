@@ -20,13 +20,13 @@ from PyQt6.QtGui import QIcon, QPixmap, QAction
 
 class BatchProcessor(QThread):
     """Thread per l'elaborazione massiva di metadati e download copertine"""
-    progress_signal = pyqtSignal(int, str)  # percentuale, messaggio di stato
-    row_updated_signal = pyqtSignal(dict) # dati aggiornati (titolo, tipo, ecc)
+    progress_signal = pyqtSignal(int, str)
+    row_updated_signal = pyqtSignal(dict)
     finished_signal = pyqtSignal()
 
     def __init__(self, tasks, boxarts_dir, no_intro_db, maker_codes):
         super().__init__()
-        self.tasks = tasks # Lista di dict {path, plat, mode}
+        self.tasks = tasks
         self.boxarts_dir = boxarts_dir
         self.no_intro_db = no_intro_db
         self.maker_codes = maker_codes
@@ -42,19 +42,16 @@ class BatchProcessor(QThread):
             filename = os.path.basename(path)
             self.progress_signal.emit(int((i / total) * 100), f"Elaborazione: {filename}")
 
-            # 1. Estrazione Metadati
             h_title, code, region, author, ver = self.extract_metadata(path)
             
-            # Controllo se è Homebrew (non presente nel DB No-Intro o codice mancante)
             is_homebrew = (code == "" or code not in self.no_intro_db)
             
             if is_homebrew:
                 real_title = h_title if h_title != "Unknown" else filename
-                author = "" # Richiesto: non mostrare autore per homebrew
+                author = "" # Per homebrew non mostriamo autore
                 box_path = None
             else:
                 real_title = self.no_intro_db.get(code, h_title)
-                # 2. Download Boxart (solo per ufficiali)
                 if mode in ['full', 'box'] and code:
                     box_path = self.process_boxart(code, real_title, plat)
                 else:
@@ -197,7 +194,6 @@ class KekatsuManager(QMainWindow):
         self.setCentralWidget(self.central)
         layout = QVBoxLayout(self.central)
 
-        # Bar superiore URL
         top_bar = QHBoxLayout()
         top_bar.addWidget(QLabel("Base URL:"))
         self.url_input = QLineEdit()
@@ -207,7 +203,6 @@ class KekatsuManager(QMainWindow):
         top_bar.addWidget(self.btn_save_url)
         layout.addLayout(top_bar)
 
-        # Pulsanti Generali
         btns = QHBoxLayout()
         self.btn_import = QPushButton("➕ Importa ROM")
         self.btn_import.clicked.connect(self.import_rom)
@@ -223,10 +218,8 @@ class KekatsuManager(QMainWindow):
         btns.addWidget(self.btn_export)
         layout.addLayout(btns)
 
-        # Layout Tabelle: Due Sezioni Separate
         tables_layout = QVBoxLayout()
         
-        # --- Sezione Ufficiali ---
         self.group_official = QGroupBox("ROM Ufficiali (Database No-Intro)")
         off_layout = QVBoxLayout(self.group_official)
         self.table_off = QTableWidget(0, 10)
@@ -238,10 +231,9 @@ class KekatsuManager(QMainWindow):
         off_layout.addWidget(self.table_off)
         tables_layout.addWidget(self.group_official, 3)
 
-        # --- Sezione Homebrew ---
         self.group_homebrew = QGroupBox("ROM Homebrew (Personalizzate)")
         hb_layout = QVBoxLayout(self.group_homebrew)
-        self.table_hb = QTableWidget(0, 7) # Colonne ridotte
+        self.table_hb = QTableWidget(0, 7)
         self.table_hb.setHorizontalHeaderLabels([
             "Titolo", "Sistema", "Regione", "Ver", "URL ROM", "File", "Size"
         ])
@@ -251,7 +243,6 @@ class KekatsuManager(QMainWindow):
 
         layout.addLayout(tables_layout)
 
-        # Status Bar
         self.status_bar = QHBoxLayout()
         self.pbar = QProgressBar()
         self.pbar.setVisible(False)
@@ -275,7 +266,6 @@ class KekatsuManager(QMainWindow):
         menu = QMenu()
         a1 = menu.addAction("🔄 Aggiorna Metadati")
         
-        # Solo ufficiali hanno boxart
         is_official = table == self.table_off
         a2 = None
         if is_official:
@@ -317,7 +307,6 @@ class KekatsuManager(QMainWindow):
         self.processor.start()
 
     def add_or_update_row(self, data):
-        """Assegna la ROM alla tabella corretta in base al tipo"""
         if not data['is_homebrew']:
             table = self.table_off
             row = table.rowCount()
@@ -352,20 +341,6 @@ class KekatsuManager(QMainWindow):
             table.item(row, 6).setText(str(data['size']))
 
     def refresh_rows(self, row_indices, table, mode='full'):
-        tasks = []
-        for r in row_indices:
-            # Identifica il file sorgente per il refresh
-            plat_col = 2 if table == self.table_off else 1
-            file_col = 7 if table == self.table_off else 5
-            plat = table.item(r, plat_col).text()
-            file = table.item(r, file_col).text()
-            tasks.append({
-                "path": os.path.join(self.roms_dir, plat, file), 
-                "plat": plat, 
-                "mode": mode
-            })
-        
-        # Pulizia righe per reinserimento (semplificato)
         self.scan_local_roms()
 
     def update_progress(self, val, msg):
@@ -422,22 +397,20 @@ class KekatsuManager(QMainWindow):
         self.scan_local_roms()
 
     def export_db(self):
-        """Esporta il database unificato con il delimitatore alla seconda riga e senza a capo finale"""
+        """Esporta il database senza indicare il tipo (Ufficiale/HB) e senza a capo finale"""
         dest = os.path.join(self.base_dir, "database.txt")
         lines = []
         try:
-            # Riga 1: Intestazione (es. versione o ID)
+            # Riga 1: Header
             lines.append("1")
-            
-            # Riga 2: Carattere delimitatore richiesto (TAB)
+            # Riga 2: Delimitatore TAB
             lines.append(self.DELIMITER)
             
-            # Esporta Ufficiali
+            # Esporta dati dalle tabelle Ufficiali
             for r in range(self.table_off.rowCount()):
                 row_data = [
                     self.table_off.item(r, 1).text(), # Titolo
-                    self.table_off.item(r, 2).text(), # Sistema
-                    "Ufficiale",                      # Tipo
+                    self.table_off.item(r, 2).text(), # Sistema (Piattaforma)
                     self.table_off.item(r, 3).text(), # Regione
                     self.table_off.item(r, 4).text(), # Ver
                     self.table_off.item(r, 5).text(), # Autore
@@ -448,24 +421,22 @@ class KekatsuManager(QMainWindow):
                 ]
                 lines.append(self.DELIMITER.join(row_data))
 
-            # Esporta Homebrew
+            # Esporta dati dalle tabelle Homebrew (unificando lo schema)
             for r in range(self.table_hb.rowCount()):
                 row_data = [
                     self.table_hb.item(r, 0).text(),  # Titolo
                     self.table_hb.item(r, 1).text(),  # Sistema
-                    "Homebrew",                       # Tipo
                     self.table_hb.item(r, 2).text(),  # Regione
                     self.table_hb.item(r, 3).text(),  # Ver
-                    "Homebrew",                       # Autore fisso per export
+                    "Homebrew",                       # Autore (placeholder per HB)
                     self.table_hb.item(r, 4).text(),  # URL ROM
                     self.table_hb.item(r, 5).text(),  # File
                     self.table_hb.item(r, 6).text(),  # Size
-                    ""                                # No URL Boxart
+                    ""                                # Nessuna Boxart per HB
                 ]
                 lines.append(self.DELIMITER.join(row_data))
             
-            # Scrittura unificata con join per evitare l'ultimo \n
-            # e garantire che la seconda riga sia esattamente il delimitatore
+            # Scrittura senza \n finale
             with open(dest, 'w', encoding='utf-8') as f:
                 f.write("\n".join(lines))
             

@@ -192,8 +192,9 @@ class KekatsuManager(QMainWindow):
         self.roms_dir = os.path.join(self.base_dir, "roms")
         self.boxarts_dir = os.path.join(self.base_dir, "boxarts")
         self.dbnames_dir = os.path.join(self.base_dir, "dbnames")
+        self.url_file = os.path.join(self.base_dir, "url.txt")
         
-        # Maker Codes Integrali (da headers.pdf)
+        # Maker Codes Integrali
         self.maker_codes = {
             "01": "Nintendo", "02": "Rocket Games", "08": "Capcom", "09": "Hot-B", "0A": "Jaleco",
             "0B": "Coconuts Japan", "0C": "Elite Systems", "13": "Electronic Arts", "18": "Hudson Soft",
@@ -228,11 +229,12 @@ class KekatsuManager(QMainWindow):
         }
 
         self.no_intro_db = {"nds": {}, "gba": {}, "dsi": {}}
-        self.DELIMITER = "\t" # <--- Impostato su TAB
+        self.DELIMITER = "\t"
 
         self.ensure_dirs()
         self.load_no_intro()
         self.setup_ui()
+        self.load_url_config()
         self.scan_local_roms(mode='fast')
 
     def ensure_dirs(self):
@@ -240,6 +242,25 @@ class KekatsuManager(QMainWindow):
             os.makedirs(d, exist_ok=True)
         for p in ["nds", "gba", "dsi"]:
             os.makedirs(os.path.join(self.roms_dir, p), exist_ok=True)
+
+    def load_url_config(self):
+        """Carica l'URL dal file url.txt se esiste."""
+        if os.path.exists(self.url_file):
+            try:
+                with open(self.url_file, 'r', encoding='utf-8') as f:
+                    url = f.read().strip()
+                    if url:
+                        self.url_input.setText(url)
+            except: pass
+
+    def save_url_config(self):
+        """Salva l'URL corrente nel file url.txt."""
+        try:
+            with open(self.url_file, 'w', encoding='utf-8') as f:
+                f.write(self.url_input.text().strip())
+            QMessageBox.information(self, "Salvato", "URL salvato correttamente in url.txt")
+        except Exception as e:
+            QMessageBox.warning(self, "Errore", f"Impossibile salvare l'URL: {e}")
 
     def load_no_intro(self):
         mapping = {"nds.dat": "nds", "gba.dat": "gba", "dsi.dat": "dsi"}
@@ -265,6 +286,10 @@ class KekatsuManager(QMainWindow):
         url_bar.addWidget(QLabel("<b>Server URL:</b>"))
         self.url_input = QLineEdit("https://myserver.com/kekatsu/")
         url_bar.addWidget(self.url_input)
+        
+        self.btn_save_url = QPushButton("💾 Salva URL")
+        self.btn_save_url.clicked.connect(self.save_url_config)
+        url_bar.addWidget(self.btn_save_url)
         layout.addLayout(url_bar)
 
         self.tabs = QTabWidget()
@@ -363,20 +388,16 @@ class KekatsuManager(QMainWindow):
 
     def export_db(self):
         dest = os.path.join(self.base_dir, "database.txt")
-        # Riga 1: Version, Riga 2: Delimiter (\t)
         lines = ["1", self.DELIMITER]
         
         def clean(txt):
             return str(txt).replace('\n', ' ').replace('\r', '').strip()
 
-        # Ufficiali
         for r in range(self.table_off.rowCount()):
             row = [clean(self.table_off.item(r, i).text()) for i in range(1, 10)]
             lines.append(self.DELIMITER.join(row))
         
-        # Homebrew
         for r in range(self.table_hb.rowCount()):
-            # Mock structure: Title, Plat, Reg, Ver, Author, URL, File, Size, Box
             row = [
                 clean(self.table_hb.item(r, 0).text()), clean(self.table_hb.item(r, 1).text()),
                 clean(self.table_hb.item(r, 2).text()), clean(self.table_hb.item(r, 3).text()),

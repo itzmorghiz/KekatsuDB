@@ -1,1 +1,2 @@
-https://itzmorghiz.github.io/KekatsuDB/
+https://media.githubusercontent.com/media/itzmorghiz/KekatsuDB/main/roms/
+https://raw.githubusercontent.com/itzmorghiz/KekatsuDB/main/boxarts/
